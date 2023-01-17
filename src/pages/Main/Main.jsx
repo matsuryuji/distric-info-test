@@ -1,6 +1,13 @@
-import Header from "components/Header"
+import Header from "components/Header";
+import PolygonMap from "components/PolygonMap";
 
+const Main = () => {
+  return (
+    <>
+      <Header title="Evolução Populacional" />
+      <PolygonMap />
+    </>
+  );
+};
 
-const Main = () => { return (<Header title="Evolução Populacional" />) }
-
-export default Main
+export default Main;

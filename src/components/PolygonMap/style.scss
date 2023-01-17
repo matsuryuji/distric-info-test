@@ -1,0 +1,12 @@
+.polygon-map {
+    &__wrapper {
+        background-color: #F5F5F5;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.leaflet-container {
+    width: 100vw;
+    height: 100vh;
+}
