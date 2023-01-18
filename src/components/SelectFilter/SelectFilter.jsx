@@ -4,9 +4,10 @@ import "./style.scss";
 const SelectFilter = (props) => {
   return (
     <div className="select-filter__wrapper">
+              <span className="select-filter__title">Escolha um Bairro</span> 
       <div className="select-filter__itens">
         <Select title="Bairro" menuItens={props.geoLocationData} />
-        <Button>Aplicar</Button>
+        <Button variant="contained">Aplicar</Button>
       </div>
     </div>
   );
