@@ -1,14 +1,14 @@
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: `http://localhost:3333`,
-});
-export default api;
-
 export const getDistrictPopulation = async (id) => {
-  return (await api.get(`/populacao_bairro?id_geometria=${id}`)).data;
+  return (await axios.get(`http://localhost:3333/populacao_bairro?id_geometria=${id}`)).data;
 };
 
 export const getAllDistrictPopulation = async () => {
-  return (await api.get(`/populacao_bairro`)).data;
+  return (await axios.get(`http://localhost:3333/populacao_bairro`)).data;
 };
+
+export const getAllDistrictGeoLocation = async () => {
+    return (await axios.get(`http://localhost:4444/geometrias`)).data;
+  };
+  
