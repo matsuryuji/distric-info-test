@@ -1,7 +1,9 @@
 import axios from "axios";
 
 export const getDistrictPopulation = async (id) => {
-  return (await axios.get(`http://localhost:3333/populacao_bairro?id_geometria=${id}`)).data;
+  return (
+    await axios.get(`http://localhost:3333/populacao_bairro?id_geometria=${id}`)
+  ).data;
 };
 
 export const getAllDistrictPopulation = async () => {
@@ -9,6 +11,9 @@ export const getAllDistrictPopulation = async () => {
 };
 
 export const getAllDistrictGeoLocation = async () => {
-    return (await axios.get(`http://localhost:4444/geometrias`)).data;
-  };
-  
+  return (await axios.get(`http://localhost:4444/geometrias`)).data;
+};
+
+export const getDistrictGeoLocation = async (id) => {
+  return (await axios.get(`http://localhost:4444/geometrias?id=${id}`)).data;
+};

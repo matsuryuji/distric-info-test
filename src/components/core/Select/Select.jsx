@@ -1,14 +1,14 @@
 import { FormControl, MenuItem, InputLabel } from "@mui/material";
 import  MuiSelect  from "@mui/material/Select";
 
-const Select = ({ title, value, handleChange, menuItens, menuItem }) => {
+const Select = ({ title, value, handleChange, menuItens }) => {
   return (
     <FormControl fullWidth>
       <InputLabel>{title}</InputLabel>
       <MuiSelect value={value} label={title} onChange={handleChange}>
-        {menuItens.map(() => (
-          <MenuItem key={menuItem} value={menuItem}>
-            {menuItem}
+        {menuItens.map((menuItem) => (
+          <MenuItem key={menuItem.id} value={menuItem.name}>
+            {menuItem.name}
           </MenuItem>
         ))}
       </MuiSelect>

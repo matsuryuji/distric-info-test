@@ -1,21 +1,25 @@
-import axios from "axios";
+import { getAllDistrictGeoLocation } from "api/api";
 import Header from "components/Header";
 import PolygonMap from "components/PolygonMap";
 import SelectFilter from "components/SelectFilter";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import "./style.scss";
 
 const Main = () => {
-    useEffect(() => {
-        axios.get("")
-    }, []);
+  const [geoLocationData, setGeoLocationData] = useState([]);
+  useEffect(() => {
+    getAllDistrictGeoLocation().then((response) => {
+      setGeoLocationData(response);
+    });
+  }, []);
   return (
-    <>
+    <div className="main__wrapper">
       <Header title="Evolução Populacional" />
-      <div>
-        <SelectFilter />
+      <div className="main__map-filter">
+        <SelectFilter geoLocationData={geoLocationData} />
         <PolygonMap />
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,19 @@
+.select-filter {
+    &__wrapper {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    &__itens {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 30px;
+        height: 100%;
+
+    }
+}

@@ -1,11 +1,13 @@
 import { Button, Select } from "components/core";
+import "./style.scss";
 
-const SelectFilter = () => {
+const SelectFilter = (props) => {
   return (
-    <div>
-      <span>Filtrar Por</span>
-      <Select title="Bairro" />
-      <Button>Aplicar</Button>
+    <div className="select-filter__wrapper">
+      <div className="select-filter__itens">
+        <Select title="Bairro" menuItens={props.geoLocationData} />
+        <Button>Aplicar</Button>
+      </div>
     </div>
   );
 };

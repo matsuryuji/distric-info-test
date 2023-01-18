@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Polygon } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 const location = [-23.220959123480718, -45.916767510714003];
-const zoom = 16;
+const zoom = 15;
 
 const mockPolygon = [
   [
