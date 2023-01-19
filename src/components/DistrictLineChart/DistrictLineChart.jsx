@@ -61,7 +61,7 @@ const DistrictLineChart = (props) => {
       <LineChart
         width={1200}
         height={300}
-        data={data}
+        data={props.districtPopulation}
         margin={{
           top: 5,
           right: 30,
@@ -70,17 +70,17 @@ const DistrictLineChart = (props) => {
         }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="uv" />
+        <XAxis dataKey="ano" />
         <YAxis />
         <Tooltip />
         <Legend />
         <Line
           type="monotone"
-          dataKey="pv"
+          dataKey="populacao"
           stroke="#8884d8"
+          name="População"
           activeDot={{ r: 8 }}
         />
-        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
       </LineChart>
     </div>
   );
