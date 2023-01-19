@@ -39,4 +39,6 @@ Abrirá na porta http://localhost:3333 e http://localhost:4444.
 
 ## `Feedback`
 
-Projeto feito na correria, pois ocorreram muitos imprevistos ao longo do tempo do teste prático e com isso não conseguir tudo que eu poderia melhorar dentro do teste, mas de todas as formas tentei dar o meu melhor neste projeto :) .
+- Foi um projeto muito bom particularmente, tive mais conhecimento com integração de mapa e gráficos.
+- O JSON de geometrias_bairros estavam com as coordenadas ao contrárias (talvez propositalmente), consequência disso ela me levava pro oceano em vez do bairro correto;
+- Projeto feito na correria, pois ocorreram muitos imprevistos ao longo do tempo do teste prático e com isso não conseguir tudo que eu poderia melhorar dentro do teste, mas de todas as formas tentei dar o meu melhor neste projeto :) ;
