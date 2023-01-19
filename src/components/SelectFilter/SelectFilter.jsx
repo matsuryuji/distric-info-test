@@ -2,6 +2,11 @@ import { Button, Select } from "components/core";
 import "./style.scss";
 
 const SelectFilter = (props) => {
+  const handleClick = () => {
+    props.handleFindPolygonMap(props.districtId);
+    props.handleShowDistrictPopulation(props.districtId);
+  };
+
   return (
     <div className="select-filter__wrapper">
       <span className="select-filter__title">Escolha um Bairro</span>
@@ -12,7 +17,9 @@ const SelectFilter = (props) => {
           handleChange={props.handleChangeDistrict}
           value={props.districtId}
         />
-        <Button variant="contained" onClick={() => props.handleFindPolygonMap(props.districtId)}>Aplicar</Button>
+        <Button variant="contained" onClick={() => handleClick()}>
+          Aplicar
+        </Button>
       </div>
     </div>
   );
