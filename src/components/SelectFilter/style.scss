@@ -1,25 +1,24 @@
 .select-filter {
-    &__wrapper {
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
+  &__wrapper {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
 
-    &__title {
-        display: flex;
-        font-weight: 700;
-        font-size: 16px; 
-        margin: 30px 30px;
-    }
+  &__title {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 30px 30px;
+  }
 
-    &__itens {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 10px 30px 20px 30px;
-        height: 100%;
-
-    }
+  &__itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 30px 20px 30px;
+    height: 100%;
+  }
 }

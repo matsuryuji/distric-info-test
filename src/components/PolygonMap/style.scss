@@ -1,18 +1,17 @@
 .polygon-map {
-    &__wrapper {
-        background-color: #F5F5F5;
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
+  &__wrapper {
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .leaflet-container {
-    width: 83vw;
-    height: 54vh;
+  width: 83vw;
+  height: 54vh;
 
-    @media only screen and (max-width: 1910px) {
-        height: 59vh;
-    }
-
+  @media only screen and (max-width: 1910px) {
+    height: 59vh;
+  }
 }

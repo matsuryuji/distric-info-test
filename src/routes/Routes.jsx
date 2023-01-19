@@ -1,7 +1,7 @@
 import {
   BrowserRouter as Router,
   Route,
-  Routes as Switch
+  Routes as Switch,
 } from "react-router-dom";
 import { Main } from "pages/Main";
 
